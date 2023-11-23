@@ -2,18 +2,28 @@ package com.example;
 
 // TODO: make this class extend Appliance
 
-public class Refrigerator {
+public class Refrigerator extends Appliance{
     // Additional attributes
     private int temperature;
 
+    public Refrigerator(String brand, String model, int powerUsage, int temperature){
+        super(brand, model,powerUsage);
+        this.temperature = temperature;
+    }
     // Constructor
     // TODO: Initialize the Refrigerator with brand, model, power usage, temperature
+
+    public void setTemperature(int newTemperature){
+        this.temperature = newTemperature;
+    }
+    // setTemperature Method
+    // TODO: Implement a method to set the temperature of the refrigerator
+    
 
     // Override displayInfo Method from Appliance
     // TODO: Implement a method that extends the information display to include the refrigerator's specific details (temperature)
 
-    // setTemperature Method
-    // TODO: Implement a method to set the temperature of the refrigerator
+    
 
 
 
